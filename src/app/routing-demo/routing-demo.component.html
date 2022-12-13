@@ -1,0 +1,16 @@
+<p>routing-demo works!</p>
+<div>
+    name: {{name}}
+    <br>
+    id: {{id}}
+    <br>
+    data:{{data}}
+</div>
+<br>
+<div>
+    <button routerLink="/routing/dixan/child/a">Childe A</button>&nbsp;
+    <button routerLink="/routing/dixan/child/b">Childe B</button>&nbsp;
+    <button routerLink="../help">Realtive route</button>&nbsp;
+    <button (click)="goToItems()">Realtive route on click</button>&nbsp;
+</div>
+<router-outlet></router-outlet>

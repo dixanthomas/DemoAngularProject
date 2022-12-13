@@ -1,0 +1,12 @@
+<nav>
+  <a class="btn btn-primary btn-lg" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>&nbsp;
+  <a class="btn btn-primary btn-lg" routerLink="/observer" routerLinkActive="active" ariaCurrentWhenActive="page">observer</a>&nbsp;
+  <a class="btn btn-primary btn-lg" [routerLink]="['/routing/dixan', { id: 'foo' }]" routerLinkActive="active" ariaCurrentWhenActive="page">routing</a>&nbsp;
+  <a class="btn btn-primary btn-lg" href="javascript:void()" (click)="queryparamroute()" routerLinkActive="active" ariaCurrentWhenActive="page">routing with query param</a>&nbsp;
+  <a class="btn btn-primary btn-lg" routerLink="/apidemo" routerLinkActive="active" ariaCurrentWhenActive="page">api</a>&nbsp;
+</nav>
+<router-outlet>
+
+  <!-- <app-routing-demo [data]=data1></app-routing-demo> -->
+
+</router-outlet>
